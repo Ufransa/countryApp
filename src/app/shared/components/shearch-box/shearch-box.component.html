@@ -1,0 +1,10 @@
+<!-- Al pulsar la tecla enter emitimos el valor escrito emitValue, 
+así como al esperar nos aparecerán los resultados sin pulsar nada OnKeyPress-->
+<input
+    placeholder="Escriba aquí su busqueda"
+    type="text"
+    class="form-control"
+    (keyup.enter)="emitValue( txtInput.value )"
+    (keyup)= "onKeyPress( txtInput.value )"
+    #txtInput
+    >

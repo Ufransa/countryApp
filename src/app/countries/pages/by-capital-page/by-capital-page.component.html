@@ -1,0 +1,29 @@
+<h2>Por Capital</h2>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <!-- Search Box con el -->
+        <!-- El (onValue) hace que recoja la información de ese evento
+        evento (onValue) desde searchbox y searchbyCapital desde byCapital component 
+        //TODO 6: Petición al endpoint -->
+        <!--  -->
+        
+        <shared-shearch-box 
+            (onValue)="searchByCapital($event)"
+            (onDebounce)="searchByCapital($event)"
+            placeholder="Buscar por capital"></shared-shearch-box>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <hr>
+        <!-- //TODO 4: Feedback de carga mientras se ejecutar la petición -->
+        <shared-loading-spinner *ngIf="isLoading"></shared-loading-spinner>
+        <!-- Llamamos al html y le mandamos nuestros paises 
+        //TODO 7: Petición al endpoint -->
+        
+        <countries-table [countries]="countries" ></countries-table>
+    </div>
+</div>

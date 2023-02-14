@@ -1,0 +1,73 @@
+<h2>Países</h2>
+<hr>
+
+<ul class="list-group">
+<!-- EN ESTE ORDEN: 
+    routerLinkActive="active" => ESTO ACTIVA LA CASILLA QUE TENGAMOS SELECCIONADA
+    routerLink="" => ESTO MANDA A LA RUTA QUE LE MANDEMOS, EN ESTE CASO LA RUTA BASE
+    [routerLinkActiveOptions]="{ exact: true }" => ESTO MANDA A LA RUTA EXACTA QUE LE MANDEMOS, EN ESTE CASO ESTÁ HECHO ASÍ
+    PORQUE DE LO CONTRARIO APUNTARÍA A LAS DOS RUTAS A LA VEZ, SIENDO LAS DOS CIERTAS.
+-->
+    <!-- <li 
+    
+        routerLinkActive="active"
+        routerLink=""
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="list-group-item">
+
+        Home Page
+
+    </li>
+
+    <li 
+
+        routerLinkActive="active"
+        routerLink="about"
+        class="list-group-item">
+        
+        About Page
+
+    </li>
+
+    <li 
+
+        routerLinkActive="active"
+        routerLink="contact"
+        class="list-group-item">
+        
+        Contact Page
+
+    </li> -->
+
+    <li 
+
+        routerLinkActive="active"
+        routerLink="countries/by-capital"
+        class="list-group-item">
+        
+        Capital
+
+    </li>
+
+    <li 
+
+        routerLinkActive="active"
+        routerLink="countries/by-country"
+        class="list-group-item">
+        
+        País
+
+    </li>
+
+    <li 
+
+        routerLinkActive="active"
+        routerLink="countries/by-region"
+        class="list-group-item">
+        
+        Región
+
+    </li>
+
+
+</ul>
